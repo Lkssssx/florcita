@@ -3,7 +3,7 @@ const noBtn = document.getElementById("no");
 const h1 = document.getElementById("h1")
 const comments = document.getElementById("comments")
 
-const quotes = ["dale q si >:c", "ya me haces poner triste ;c", "ya me enoje otra ve >;C", "acaso ya no me quere?", "vas a casarte conmigo quieras o no uwu"]
+const quotes = ["dale q si >:c", "ya me haces poner triste ;c", "ya me enoje >;C", "acaso ya no me quere?", "vas a casarte conmigo quieras o no uwu"]
 let counter = 0
 
 yesBtn.addEventListener("click", () => {
