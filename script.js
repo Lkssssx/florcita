@@ -15,12 +15,18 @@ noBtn.addEventListener("click", () => {
     if (counter >= 5) {
         h1.hidden = true;
     }
-    const currentWidth = parseInt(window.getComputedStyle(yesBtn).width);
-    const currentHeight = parseInt(window.getComputedStyle(yesBtn).height)
-    const currentFontSize = parseInt(window.getComputedStyle(yesBtn).fontSize)
-    yesBtn.style.width = (currentWidth * 1.8) + 'px';
-    yesBtn.style.height = (currentHeight * 1.8) + 'px';
-    yesBtn.style.fontSize = (currentFontSize * 1.8) + 'px';
+    if (counter <= 5) {
+        const currentWidth = parseInt(window.getComputedStyle(yesBtn).width);
+        const currentHeight = parseInt(window.getComputedStyle(yesBtn).height)
+        const currentFontSize = parseInt(window.getComputedStyle(yesBtn).fontSize)
+        yesBtn.style.width = (currentWidth * 1.8) + 'px';
+        yesBtn.style.height = (currentHeight * 1.8) + 'px';
+        yesBtn.style.fontSize = (currentFontSize * 1.8) + 'px';
+} else {
+        yesBtn.style.width = "100vw";
+        yesBtn.style.height = "100vh";
+        yesBtn.style.fontSize = "29rem";
+}
     comments.hidden = false
     comments.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
 });
